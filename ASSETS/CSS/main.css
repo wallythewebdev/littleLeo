@@ -1,0 +1,137 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.animationContatiner {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: -1;
+}
+
+#openingAnimation {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+/* setting up the sections of the page style */
+/* ***************************
+        HEADER
+*****************************/
+
+header {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+
+/* ***************************
+        SECTIONS
+*****************************/
+
+.callout {
+    padding: 120px 0;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+
+    background: black;
+    color: white;
+
+    background-image: url(/ASSETS/img/grid_isometric.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.wrapper {
+    max-width: 738px;
+    margin: 0 auto; 
+    background: black;
+    padding: 5%;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+p {
+    font-size: 24px;
+}
+
+p.sub-p {
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1140px){
+    .animationContatiner {
+        min-height: 50vh;
+    }
+    section {
+        padding-bottom: 80px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .wrapper {
+        width: 80%;
+    }
+}
+
+
+
+/* footer */
+
+footer {
+    background: black;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 50px 0;
+    font-family: moon;
+    font-weight: bold;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px 0;
+    width: 50%;
+}
